@@ -1,0 +1,3 @@
+plik z danymi tekstowymi
+do
+przeprowadzania testów
