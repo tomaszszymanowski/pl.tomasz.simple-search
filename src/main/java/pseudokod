@@ -9,3 +9,6 @@
     - a gdyby chcieć to robić na zwykłej tablicy to String value.of?
 
     a gdyby wpisać wsystkie nazwiska do listy i zrobić sortowanie i wtedy policzyć godziny?
+
+TODO
+- program powinien być uruchamiany w pętli z wykorzystaniem skanera
