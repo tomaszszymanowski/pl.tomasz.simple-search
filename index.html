@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wyszukiwanie terminów</title>
+</head>
+<link rel="stylesheet" href="arkusz.css">
+    <body>
+        <header>
+            <h1>Wyszukiwanie terminów z pliku</h1>
+        </header>
+        <main>
+            <article>
+                <form action="\list" method="post" enctype="multipart/form-data">
+
+                    <div class="row">
+                        <label>Prześlij plik z danymi do wyszukiwania</label> <input type="file" name="dane tekstowe">
+                    </div>
+<br>
+                    <div class="row">
+                        <label>Podaj nazwisko dla którego chcesz znaleźć termimy <input type="search" name="searchedName" placeholder="wpisz nazwisko"></label>
+                    </div>
+
+                    <div class="row">
+                        <input type="submit" value="wyszukaj">
+                    </div>
+
+                </form>
+            </article>
+        </main>
+
+
+    </body>
+</html>
