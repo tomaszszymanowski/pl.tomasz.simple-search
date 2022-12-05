@@ -11,7 +11,7 @@ public class main{
     public  static String scan(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Kogo szukamy?");
-        String name = scanner.next();
+        String name = scanner.nextLine();
         return name;
     }
 }
