@@ -5,6 +5,7 @@ public class main{
 
     public static void main(String[] args) throws IOException {
 
+
         Person.personSerach(scan());
     }
 
@@ -15,5 +16,4 @@ public class main{
         return name;
     }
 }
-
 

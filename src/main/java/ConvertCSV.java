@@ -1,8 +1,10 @@
 import com.spire.xls.Workbook;
 import com.spire.xls.Worksheet;
 
+import java.io.IOException;
+
 public class ConvertCSV {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //Create an instance of Workbook class
         Workbook workbook = new Workbook();
         //Load an Excel file
@@ -13,5 +15,6 @@ public class ConvertCSV {
 
         //Save the worksheet as CSV
         sheet.saveToFile("ExcelToCSV.csv", ",");
+        Person.personSerach(main.scan());
     }
 }
