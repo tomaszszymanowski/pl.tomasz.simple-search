@@ -5,7 +5,8 @@ public class main{
 
     public static void main(String[] args) throws IOException {
 
-        Person.personSearch(scan());
+
+        Person.personSerach(scan());
     }
 
     public  static String scan(){
@@ -15,5 +16,4 @@ public class main{
         return name;
     }
 }
-
 
