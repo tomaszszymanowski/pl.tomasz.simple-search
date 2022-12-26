@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Person {
 
     public static void personSearch(String name) throws IOException {
-        File file = new File("C:\\TSzi\\simple-search\\zakresdat.txt");
+        File file = new File("C:\\TzSi\\AKTUALNE_PROJEKTY\\pl.tomasz.simple-search\\zakresdat.txt");
 
         BufferedReader buffRead = new BufferedReader(new FileReader(file));
 
