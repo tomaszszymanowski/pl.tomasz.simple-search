@@ -9,15 +9,14 @@ public class Person {
         BufferedReader buffRead = new BufferedReader(new FileReader(file));
         String str;
         ArrayList<String> list = new ArrayList<>();
-        String searchedName = name;
 
         while ((str = buffRead.readLine()) != null) {
 
-            if (str.contains(searchedName)) {
+            if (str.contains(name)) {
                 String[] splittedStr = str.split(",");
 
                 for (int i = 2; i < splittedStr.length; i++) {
-                    if (splittedStr[i].contains(searchedName)) {
+                    if (splittedStr[i].contains(name)) {
                         String dateAndTime = splittedStr[0] + " " + splittedStr[i - 2] + " " + splittedStr[i];
                         list.add(dateAndTime);
                     }
