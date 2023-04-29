@@ -4,15 +4,11 @@ import java.util.ArrayList;
 public class Person {
 
     public static void personSerach(String name) throws IOException {
-//        File file = new File("C:\\TSzi\\simple-search\\zakresdat.txt");
-        File file = new File("C:\\TSzi\\simple-search\\ExcelToCSV.csv");
+        File file = new File("C:\\TzSi\\AKTUALNE_PROJEKTY\\pl.tomasz.simple-search\\ExcelToCSV.csv");
 
         BufferedReader buffRead = new BufferedReader(new FileReader(file));
-
         String str;
-
         ArrayList<String> list = new ArrayList<>();
-
         String searchedName = name;
 
         while ((str = buffRead.readLine()) != null) {
