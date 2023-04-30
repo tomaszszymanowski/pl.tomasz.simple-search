@@ -1,9 +1,11 @@
 import com.spire.xls.Workbook;
 import com.spire.xls.Worksheet;
+import domain.Person;
+import services.CopyFileService;
 
 import java.io.IOException;
 
-public class ConvertCSV {
+public class FirstRunBeforeUpdate {
     public static void main(String[] args) throws IOException {
 
         CopyFileService.copySourceFile();
@@ -19,7 +21,7 @@ public class ConvertCSV {
         //Save the worksheet as CSV
 //        sheet.saveToFile("C:\\TzSi\\AKTUALNE_PROJEKTY\\pl.tomasz.simple-search\\ExcelToCSV.csv", ",");
         sheet.saveToFile("C:\\TSzi\\simple-search\\ExcelToCSV.csv", ",");
-        Person.personSerach(main.scan());
+        Person.personSerach(NextLaunches.scan());
     }
 
 }
