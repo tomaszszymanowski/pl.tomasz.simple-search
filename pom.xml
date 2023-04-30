@@ -9,8 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>12</maven.compiler.source>
-        <maven.compiler.target>12</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <repositories>
@@ -22,9 +22,9 @@
     </repositories>
     <dependencies>
         <dependency>
-            <groupId> e-iceblue </groupId>
-            <artifactId>spire.xls </artifactId>
-            <version>12.6.0</version>
+            <groupId>e-iceblue</groupId>
+            <artifactId>spire.xls</artifactId>
+            <version>12.7.0</version>
         </dependency>
 
     </dependencies>
