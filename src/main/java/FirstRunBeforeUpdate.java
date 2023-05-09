@@ -3,10 +3,10 @@ import com.spire.xls.Worksheet;
 import domain.Person;
 import services.CopyFileService;
 
-import java.io.IOException;
+
 
 public class FirstRunBeforeUpdate {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Throwable {
 
         CopyFileService.copySourceFile();
 
