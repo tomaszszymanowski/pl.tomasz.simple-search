@@ -5,7 +5,7 @@ import services.CopyFileService;
 
 
 
-public class FirstRunBeforeUpdate {
+public class FirstRunAfterUpdate {
     public static void main(String[] args) throws Throwable {
 
         CopyFileService.copySourceFile();
