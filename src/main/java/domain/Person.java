@@ -19,7 +19,10 @@ public class Person {
 
                 for (int i = 2; i < splittedStr.length; i++) {
                     if (splittedStr[i].contains(name)) {
-                        String dateAndTime = splittedStr[0] + " " + splittedStr[i - 2] + " " + splittedStr[i];
+                        String dateAndTime = splittedStr[0] + " " +
+                                splittedStr[i - 2] + " " +
+                                splittedStr[i - 1] + " " +
+                                splittedStr[i].replace('"', ' ');
                         list.add(dateAndTime);
                     }
                 }
