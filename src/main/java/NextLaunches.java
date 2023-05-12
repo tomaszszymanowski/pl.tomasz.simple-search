@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class NextLaunches {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Throwable {
 
 
         Person.personSerach(scan());

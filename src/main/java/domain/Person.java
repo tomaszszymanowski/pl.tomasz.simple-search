@@ -12,21 +12,25 @@ public class Person {
         String str;
         ArrayList<String> list = new ArrayList<>();
 
-        char ch = 0;
         double count = 0.0;
+
         while ((str = buffRead.readLine()) != null) {
 
+            str = str.replaceAll(",",".");
+
             if (str.contains(name)) {
-                String[] splittedStr = str.split(",");
+                String[] splittedStr = str.split(";");
 
 
 
                 for (int i = 2; i < splittedStr.length; i++) {
 
                     if (splittedStr[i].contains(name)) {
+                        if(!splittedStr[i-1].contains(",")) {
                         count += Double.parseDouble(splittedStr[i-1]
-                                .replace('"', ' ')
+                                .replaceAll("\"", " ").replace(',', '.')
                                 .trim());
+                        }
                         String dateAndTime = splittedStr[0] + " " +
                                 splittedStr[i - 2] + " " +
                                 "(" + splittedStr[i - 1].replace('"', ' ').trim() +  ")" +  " " +
@@ -41,6 +45,6 @@ public class Person {
             System.out.println(meetings);
         }
 
-        System.out.println("Godzin w sumie: " + String.valueOf(count));
+        System.out.println("Godzin w sumie: " + count);
     }
 }
