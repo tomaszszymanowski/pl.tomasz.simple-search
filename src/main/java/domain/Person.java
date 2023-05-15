@@ -26,12 +26,12 @@ public class Person {
                 for (int i = 2; i < splittedStr.length; i++) {
 
                     if (splittedStr[i].contains(name)) {
-                        if(!splittedStr[i-1].contains(",")) {
+                        if(!splittedStr[i-1].contains("")) {
                         count += Double.parseDouble(splittedStr[i-1]
                                 .replaceAll("\"", " ").replace(',', '.')
                                 .trim());
                         }
-                        String dateAndTime = splittedStr[0] + " " +
+                        String dateAndTime = splittedStr[0].replaceAll("\"", "") + " " +
                                 splittedStr[i - 2] + " " +
                                 "(" + splittedStr[i - 1].replace('"', ' ').trim() +  ")" +  " " +
                                 splittedStr[i].replace('"', ' ');
