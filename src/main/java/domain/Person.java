@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Person {
 
-    public static void personSerach(String name) throws IOException {
+    public static void personSerach(String name) throws Throwable {
         File file = new File("C:\\TSzi\\simple-search\\ExcelToCSV.csv");
 
         BufferedReader buffRead = new BufferedReader(new FileReader(file));
@@ -26,7 +26,7 @@ public class Person {
                 for (int i = 2; i < splittedStr.length; i++) {
 
                     if (splittedStr[i].contains(name)) {
-                        if(splittedStr[i-1].contains("")) {
+                        if(!"".equals(splittedStr[i-1])) {
                         count += Double.parseDouble(splittedStr[i-1]
                                 .replaceAll("\"", " ").replace(',', '.')
                                 .trim());

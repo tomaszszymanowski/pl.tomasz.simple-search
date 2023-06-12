@@ -2,11 +2,10 @@ package services;
 
 import com.spire.xls.Workbook;
 import com.spire.xls.Worksheet;
-import domain.Person;
 
 public class ConvertXLSCToCSVService {
 
-    public static void main(String[] args) throws Throwable {
+    public static void main() throws Throwable {
 
         CopyFileService.copySourceFile();
 
